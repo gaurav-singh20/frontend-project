@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Remote Tech Jobs</title>
+<link rel="stylesheet" href="./css/Workpage.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Micro+5+Charted&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header_wrapper wrapper">
+          <div class="header_left">
+            <a href="./index.html">
+            <img src="./assets/final logo1.png" alt="logo">
+            </a>
+            <ul class="header_left_list">
+              <a href="./talentpage.html">
+              <li class="header_left_list_item">
+                Find Talent
+              </li>
+              </a>
+              <a href="./Workpage.html">
+              <li class="header_left_list_item">
+                Find Work
+              </li>
+              </a>
+              <a href="./about us.html">
+              <li class="header_left_list_item">
+                About SkillHive
+              </li>
+              </a>
+              <a href="./contact us.html">
+              <li class="header_left_list_item">
+                Contact Us
+              </li>
+              </a>
+              <li>
+                <a href="login.html">
+                  <button class="btn_primary" onclick="">Log In</button>
+                  </a>    
+              </li>
+              <li>
+                <a href="signup.html">
+                  <button class="btn_secondary">Sign Up</button>
+                  </a>
+              </li>
+            </div>
+        </div>
+      </header>
+      <section class="Search-section">
+        <div class="container">
+          <div class="search-container">
+            <h2>Find your job</h2>
+            <br>
+            <div class="search-bar">
+              <input type="text" id="searchField" placeholder="Try 'Python', 'Data Analysis'...">
+              <button onclick="searchJobs()">Search</button>
+            </div>
+            <ul class="job-list" id="jobList">
+            </ul>
+          </div>
+          <br>
+          <div class="suggestions-container">
+            <h3>Suggested Job Roles</h3>
+            <ul id="suggestedRoles">
+              <li>Frontend Developer</li>
+              <li>Project Manager</li>
+              <li>DevOps Engineer</li>
+              <li>Product Manager</li>
+              <li>Graphic Designer</li>
+            </ul>
+          </div>
+        </div>
+        </section>
+        <br>
+
+        <section class="section_7 wrapper" style="font-family: Micro 5 Charted;">
+          <h1>
+            Available works
+          </h1>
+          <div class="section_7_container">
+            <div
+              onclick="onClickLeft()"
+              class="section_7_reviews_list_controls_left"
+            >
+              <img src="./assets/arrow-right.svg" alt="" />
+            </div>
+            <div
+              onclick="onClickRight()"
+              class="section_7_reviews_list_controls_right"
+            >
+              <img src="./assets/arrow-right.svg" alt="" />
+            </div>
+            <!-- ---------------------------------------------------------------------- -->
+            <div class="section_7_reviews_carousel">
+              <div class="section_7_reviews_list">
+                <div class="section_7_reviews_list_box_1">
+                  <div class="section_7_reviews_list_item item_1">
+                    <div class="section_7_reviews_list_item_top">
+                      <h3>3D Illustration work for Display Manufacturer</h3>
+                      <br>
+                      <h4>
+                        Job Summary: We are seeking a skilled 3D CAD Specialist to join our team and enhance our 
+                        interactive display projects. The ideal candid…
+                      </h4>
+                      <br>
+                      <p>Hourly - Posted 1 day ago</p>
+                    </div>
+                    <div class="section_7_reviews_list_item_bottom">
+                      <h4>
+                        <button class="btn_secondary">See more</button>
+                      </h4>
+                      <hr />
+                      <div class="section_7_reviews_list_item_bottom_results">
+                        <div>
+                          <h4>30 Hours</h4>
+                          <p>30 hours weekly only</p>
+                        </div>
+                        <div>
+                          <h4>Intermediate</h4>
+                          <p>Experience-required</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+  <!-- ---------------------------------------------------------------------- -->
+                  <div class="section_7_reviews_list_item item_2">
+                    <div class="section_7_reviews_list_item_top">
+                      <!-- <img src="./assets/microsoft-white.svg" alt="" /> -->
+                      <h3>
+                        Chatbot Creation and Methodology Analysis
+                      </h3>
+                      <br>
+                      <h4>We are seeking an experienced freelancer to assist us in creating a chatbot on the pandorabots platform using AIML.<br>
+                         In addition to chatbot development...
+                      </h4>
+                      <br>
+                      <p>Fixed-price - Posted 3 days ago</p>
+                    </div>
+                    <div class="section_7_reviews_list_item_bottom">
+                      <h5>
+                        <button class="btn_secondary">See more</button>
+                      </h5>
+                      <hr/>
+                      <div class="section_7_reviews_list_item_bottom_results">
+                        <div>
+                          <h4>$350</h4>
+                          <p>Fixed-price</p>
+                        </div>
+                        <div>
+                          <h4>Expert</h4>
+                          <p>Experience-required</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="section_7_reviews_list_box_2">
+                  <div class="section_7_reviews_list_item item_3">
+                    <div class="section_7_reviews_list_item_top">
+                      <h3>
+                        YouTube Banner Design Needed
+                      </h3>
+                      <br>
+                      <h4>
+                        We are looking for a talented graphic-designer to create a YouTube banner for our channel.
+                      </h4>
+                      <p>Fixed-price - Posted 1 day ago</p>
+                    </div>
+    
+                    <div class="section_7_reviews_list_item_bottom">
+                      <h5>
+                        <button class="btn_secondary">See more</button>
+                      </h5>
+                      <hr />
+                      <div class="section_7_reviews_list_item_bottom_results">
+                        <div>
+                          <h4>$15</h4>
+                          <p>Fixed-price</p>
+                        </div>
+                        <div>
+                          <h4>Beginner</h4>
+                          <p>Experience-required/p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ------------------------------------------------------------------------>
+                  <div class="section_7_reviews_list_item item_3">
+                    <div class="section_7_reviews_list_item_top">
+                      <h3>
+                        Front End Engineer - Animation Coding
+                      </h3>
+                      <br>
+                      <h4>
+                        We are looking for a frontend engineer who can code two animations for us to use in our web application
+                      </h4>
+                      <p>Fixed-price - Posted 10 day ago</p>
+                    </div>
+    
+                    <div class="section_7_reviews_list_item_bottom">
+                      <h5>
+                        <button class="btn_secondary">See more</button>
+                      </h5>
+                      <hr />
+                      <div class="section_7_reviews_list_item_bottom_results">
+                        <div>
+                          <h4>$150</h4>
+                          <p>Fixed-price</p>
+                        </div>
+                        <div>
+                          <h4>Expert</h4>
+                          <p>Experience-required/p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- ---------------------------------------------------------------------- -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+<br>    
+<footer class="footer">
+  <div class="wrapper">
+    <div class="footer_middle">
+      <div class="footer_middle_left">
+        <h5>Follow Us</h5>
+        <div class="footer_middle_left_list">
+          <div class="footer_icons">
+            <img src="./assets/facebook.svg" alt="facebook" />
+          </div>
+          <div class="footer_icons">
+            <img src="./assets/linkedIn.svg" alt="linkedIn" />
+          </div>
+          <div class="footer_icons">
+            <img src="./assets/twitter.svg" alt="twitter" />
+          </div>
+          <div class="footer_icons">
+            <img src="./assets/youtube.svg" alt="youtube" />
+          </div>
+          <div class="footer_icons">
+            <img src="./assets/instagram.svg" alt="instagram" />
+          </div>
+        </div>
+      </div>
+      <div class="footer_middle_right">
+        <h5>Mobile app</h5>
+        <div class="footer_middle_right_list">
+          <div class="footer_icons">
+            <img src="./assets/apple.svg" alt="apple" />
+          </div>
+          <div class="footer_icons">
+            <img src="./assets/android.svg" alt="android" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer_bottom">
+      <p>© 2015 - 2022 Upwork® Global Inc.</p>
+      <ul class="footer_bottom_list">
+        <li>Terms of Service</li>
+        <li>Privacy Policy</li>
+        <li>CA Notice at Collection</li>
+        <li>Cookie Settings</li>
+        <li>Accessibility</li>
+      </ul>
+    </div>
+  </div>
+</footer>
+<script>
+
+  function searchJobs() {
+    var searchTerm = document.getElementById('searchField').value;
+    var jobs = [
+      { title: 'Data Scientist', skills: 'Python, Machine Learning' },
+      { title: 'Backend Developer', skills: 'Node.js, MongoDB' },
+      { title: 'UI/UX Designer', skills: 'Sketch, User Research' },
+    ];
+    var jobList = document.getElementById('jobList');
+    jobList.innerHTML = ''; 
+    jobs.forEach(function(job) {
+      if (job.title.toLowerCase().includes(searchTerm.toLowerCase()) || job.skills.toLowerCase().includes(searchTerm.toLowerCase())) {
+        var li = document.createElement('li');
+        li.textContent = job.title + ' - ' + job.skills;
+        jobList.appendChild(li);
+      }
+    });
+  }
+  
+  document.getElementById('suggestedRoles').addEventListener('click', function(e) {
+    if(e.target.tagName === 'LI') {
+      document.getElementById('searchField').value = e.target.textContent;
+      searchJobs();
+    }
+  });
+
+const carousal = document.querySelector(".section_7_reviews_carousel");
+const leftBtn = document.querySelector(".section_7_reviews_list_controls_left");
+const rightBtn = document.querySelector(".section_7_reviews_list_controls_right");
+const list = document.querySelector(".section_7_reviews_list");
+
+const onClickRight = () => {
+  carousal.scrollTo(list.scrollWidth, 0);
+  rightBtn.style.opacity = 0;
+  leftBtn.style.opacity = 1;
+};
+
+const onClickLeft = () => {
+  carousal.scrollTo(-list.scrollWidth, 0);
+  rightBtn.style.opacity = 1;
+  leftBtn.style.opacity = 0;
+};
+
+  </script>
+</body>
+</html>
