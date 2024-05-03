@@ -1,0 +1,24 @@
+.header-container {
+    width: 100%;
+    height: 80px;
+    background-color: black; /* Set background color to black */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .logo {
+        font-size: 20px;
+        font-weight: bold;
+        letter-spacing: 4px;
+        margin-left: 40px;
+        color: #ffffff; /* Set text color to white */
+    }
+
+    .logout {
+        font-size: 18px;
+        font-weight: bold;
+        margin-right: 40px;
+        cursor: pointer;
+        color: #fcfcfc; /* Set text color to white */
+    }
+}
